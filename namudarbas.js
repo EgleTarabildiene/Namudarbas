@@ -318,18 +318,26 @@ console.log(texS('burbulas', 'b'));
 //kurie pasikartoja visuose pradiniuose masyvuose.
 console.log('-------------naujas masyvas--------')
 
-function doubleArray(a, b) {
-    let naujas = [];
+//function doubleArray(a, b) {
+//    let naujas = [];
+//
+//    for (let i = 0; i < b.length; i++) {
+//
+//        if (a.includes(b[i])) {
+//            naujas.push(b[i]);
+//        }
+//    } return naujas;
+//}
 
-    for (let i = 0; i < b.length; i++) {
-
-        if (a.includes(b[i])) {
-            naujas.push(b[i]);
-        }
-    } return naujas;
+function multipleArrays(a, b, c) {
+    const duplicates = a.filter(i => b.includes(i) && c.includes(i));
+    return duplicates;
 }
-console.log(doubleArray([5, 6, 7, 10], [2, 5, 6, 9, 10]));
-console.log(doubleArray([2, 155, 14, 19, 9], [1, 2, 2, 2, 6, 9, 155]));
+
+
+
+console.log(multipleArrays([5, 6, 7, 10], [2, 5, 6, 9, 10]));
+console.log(multipleArrays([2, 155, 14, 19, 9], [1, 2, 2, 2, 6, 9, 155]));
 
 
 

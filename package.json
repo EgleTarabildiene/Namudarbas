@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "object": "node --watch ./objects.js",
+    "namud2": "node --watch ./namudarbas2.js",
     "namud": "node --watch ./namudarbas.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
